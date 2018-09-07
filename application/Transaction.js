@@ -3,8 +3,9 @@ const path = require("path");
 const BaseTransaction = require("./BaseTransaction");
 
 
-const store_path = path.resolve('../hfc-key-store');
-const config = path.resolve('../config/network.yaml');
+const store_path = path.join(__dirname,'../hfc-key-store');
+const config = path.join(__dirname,'../config/network.yaml');
+
 let tx_id_string=null;
 class FBClient extends BaseTransaction {
 
@@ -16,7 +17,7 @@ class FBClient extends BaseTransaction {
         
         let chaincodeResponse;
         const channel = this.getChannel();
-        const peers = this.getPeersForOrg("ClientaudMSP");
+        const peers = this.getPeersForOrg("Org1MSP");
         let eventHub;
         return new Promise((resolve, reject) => {
             channel.sendTransactionProposal(rq, 1000).then((proposalResponse) => {
@@ -158,7 +159,7 @@ class FBClient extends BaseTransaction {
 
 const client = new FBClient();
 client.loadFromConfig(config);
-client.loadUserContext("user1").then((result) => {
+client.loadUserContext("user2").then((result) => {
 }).catch((err) => {
     console.log(err)
 });

@@ -27,11 +27,11 @@ organizations:
       - peer0.org1.example.com
       - peer1.org1.example.com
     certificateAuthorities:
-      - ca.org1.example.com
+      - ca.example.com
     adminPrivateKey:
-      path: /home/pankaj/workspace/blockchian/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/a468a9fcf4004629aaf62cacfe800caa26b44d2b7d4684536ae70dfb8351de67_sk
+      path: /home/pankaj/work/fabric-samples/first-network-original/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/61a8b4ff67a02cd5be274e5e2408fcf80ce8f03195a6ef3393137be63e26b6d1_sk
     signedCert:
-      path: /home/pankaj/workspace/blockchian/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem
+      path: /home/pankaj/work/fabric-samples/first-network-original/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem
 
 
 orderers:
@@ -40,7 +40,7 @@ orderers:
     grpcOptions:
       ssl-target-name-override: orderer.example.com
     tlsCACerts:
-      path: /home/pankaj/workspace/blockchian/fabric-samples/first-network/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem
+      path: /home/pankaj/work/fabric-samples/first-network-original/crypto-config/ordererOrganizations/example.com/msp/tlscacerts/tlsca.example.com-cert.pem
 
 peers:
   peer0.org1.example.com:
@@ -50,7 +50,7 @@ peers:
       ssl-target-name-override: peer0.org1.example.com
       grpc.keepalive_time_ms: 600000
     tlsCACerts:
-      path: /home/pankaj/workspace/blockchian/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem
+      path: /home/pankaj/work/fabric-samples/first-network-original/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem
 
   peer1.org1.example.com:
     url: grpcs://localhost:8051
@@ -59,7 +59,7 @@ peers:
       ssl-target-name-override: peer1.org1.example.com
       grpc.keepalive_time_ms: 600000
     tlsCACerts:
-      path: /home/pankaj/workspace/blockchian/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem
+      path: /home/pankaj/work/fabric-samples/first-network-original/crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem
 
   certificateAuthorities:
     ca.org1.example.com:
@@ -67,8 +67,8 @@ peers:
       httpOptions:
         verify: false
       tlsCACerts:
-        path: /home/pankaj/workspace/blockchian/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem
+        path: /home/pankaj/work/fabric-samples/first-network-original/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem
       registrar:
         - enrollId: admin
           enrollSecret: adminpw
-      caName: ca.org1.example.com
+      caName: ca.example.com

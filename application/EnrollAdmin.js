@@ -2,12 +2,13 @@
 
 const FabricClient = require('fabric-client');
 const FabricCAClient = require('fabric-ca-client');
-const caAddress = 'https://localhost:7054';
+const caAddress = 'http://localhost:7054';
+const path = require("path");
 
 
 let caClient = null;
 let admin_user = null;
-const store_path = '../hfc-key-store';
+const store_path = path.join(__dirname,'../hfc-key-store');
 const client = new FabricClient();
 // create the key value store as defined in the fabric-client/config/default.json 'key-value-store' setting
 FabricClient.newDefaultKeyValueStore({ path: store_path

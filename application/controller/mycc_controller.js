@@ -9,8 +9,8 @@ class Mycc {
             fcn: 'query',
             args: ['a']
         };
-        transation.query(request)
-        console.log("Test");
+        return transation.query(request)
+        
     }
 
 }
