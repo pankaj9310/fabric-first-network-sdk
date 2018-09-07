@@ -166,6 +166,3 @@ client.loadUserContext("user2").then((result) => {
 
 
 module.exports = client;
-
-
-

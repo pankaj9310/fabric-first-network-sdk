@@ -1,7 +1,7 @@
 
 const FabricClient = require('fabric-client');
 const FabricCAClient = require('fabric-ca-client');
-
+const path = require("path");
 const caAddress = 'http://localhost:7054';
 
 const client = new FabricClient();

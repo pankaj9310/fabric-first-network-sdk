@@ -29,7 +29,7 @@ organizations:
     certificateAuthorities:
       - ca.example.com
     adminPrivateKey:
-      path: /home/pankaj/work/fabric-samples/first-network-original/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/61a8b4ff67a02cd5be274e5e2408fcf80ce8f03195a6ef3393137be63e26b6d1_sk
+      path: /home/pankaj/work/fabric-samples/first-network-original/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/ce293e7961c4f3dece4f2486f342c5253c53f054a17466cba4c1ed9ec6c2eb43_sk
     signedCert:
       path: /home/pankaj/work/fabric-samples/first-network-original/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem
 
