@@ -66,7 +66,7 @@ class FBClient extends BaseTransaction {
                                 }
 
                                 chaincodeResponse.event_status = code;
-                                chaincodeResponse.tx_id = tx_id_string._transaction_id;
+                                // chaincodeResponse.tx_id = tx_id_string._transaction_id;
                                 res(chaincodeResponse);
 
                             }, (eventHubError) => {
